@@ -8,5 +8,6 @@ namespace Tienda.controlador
 {
     class BDclass
     {
+        //Base de datos
     }
 }

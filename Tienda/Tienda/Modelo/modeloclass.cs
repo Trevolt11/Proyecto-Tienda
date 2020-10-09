@@ -8,6 +8,6 @@ namespace Tienda.Modelo
 {
     class modeloclass
     {
-
+        //software.
     }
 }
