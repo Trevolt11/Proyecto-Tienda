@@ -8,7 +8,6 @@ namespace Tienda.Modelo
 {
     class modeloclass
     {
-        // algo le puse ahi, qsy.
 
     }
 }
