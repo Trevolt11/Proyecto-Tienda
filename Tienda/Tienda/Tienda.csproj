@@ -49,6 +49,7 @@
     <Compile Include="controlador\BDclass.cs" />
     <Compile Include="Modelo\Modelo_Categoria.cs" />
     <Compile Include="Modelo\Modelo_Productos.cs" />
+    <Compile Include="Modelo\prueba.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\Interfaz.cs">
