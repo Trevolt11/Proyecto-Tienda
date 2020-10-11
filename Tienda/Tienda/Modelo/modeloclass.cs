@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace Tienda.Modelo
 {
-    class modeloclass
+    class Modelo_Productos
     {
-        //software.
+        static int ID;
+        static string Nombre_Producto;
+        static int Codigo;
+        static int Stock;
+        static DateTime Fecha;
+        static string Categoria;
+        static bool Estado;
+
+       
+
     }
+
 }
