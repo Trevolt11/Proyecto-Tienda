@@ -15,6 +15,16 @@ namespace Tienda.Vista
         public MantenimientoProductos()
         {
             InitializeComponent();
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+        }
+
+        private void MantenimientoProductos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

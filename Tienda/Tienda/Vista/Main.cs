@@ -25,7 +25,12 @@ namespace Tienda.Vista
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
-            
+            //form
+            /*
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            */
         }
 
         //Structs
@@ -90,9 +95,12 @@ namespace Tienda.Vista
         {
 
             ActivateButton(sender, RGBcolors.color1);
-            MantenimientoCategorias v1 = new MantenimientoCategorias();
-            v1.Show();
-            this.Close();
+            Form MC = new MantenimientoCategorias();
+            MC.TopLevel = false;
+            panelEscritorio.Controls.Add(MC);
+            panelEscritorio.Tag = MC;
+            MC.Show();
+            //this.Close();
 
         }
 
@@ -100,9 +108,14 @@ namespace Tienda.Vista
         {
 
             ActivateButton(sender, RGBcolors.color2);
-            MantenimientoProductos v2 = new MantenimientoProductos();
-            v2.Show();
-            this.Close();
+
+            Form MCC = new MantenimientoProductos();
+            MCC.TopLevel = false;
+            panelEscritorio.Controls.Add(MCC);
+            panelEscritorio.Tag = MCC;
+            MCC.Show();
+            //v2.Show();
+            //this.Close();
         }
 
         private void Listado_Click(object sender, EventArgs e)
@@ -110,9 +123,12 @@ namespace Tienda.Vista
             
 
             ActivateButton(sender, RGBcolors.color4);
-            ListadoProductos v3 = new ListadoProductos();
-            v3.Show();
-            this.Close();
+            Form MC = new ListadoProductos();
+            MC.TopLevel = false;
+            panelEscritorio.Controls.Add(MC);
+            panelEscritorio.Tag = MC;
+            MC.Show();
+            //this.Close();
         }
 
         private void btnHome_Click(object sender, EventArgs e)

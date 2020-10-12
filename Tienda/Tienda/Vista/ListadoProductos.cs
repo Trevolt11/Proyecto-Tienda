@@ -21,6 +21,11 @@ namespace Tienda.Vista
         public ListadoProductos()
         {
             InitializeComponent();
+
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
 
@@ -33,6 +38,11 @@ namespace Tienda.Vista
         }
 
         private void Categorias_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ListadoProductos_Load(object sender, EventArgs e)
         {
 
         }

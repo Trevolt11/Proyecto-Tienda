@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controlador\BDclass.cs" />
     <Compile Include="controlador\CategoriaControlador.cs" />
     <Compile Include="controlador\ProductoControlador.cs" />
     <Compile Include="Modelo\Modelo_Categoria.cs" />
@@ -95,6 +94,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\MantenimientoCategorias.resx">
+      <DependentUpon>MantenimientoCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\MantenimientoProductos.resx">
+      <DependentUpon>MantenimientoProductos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
