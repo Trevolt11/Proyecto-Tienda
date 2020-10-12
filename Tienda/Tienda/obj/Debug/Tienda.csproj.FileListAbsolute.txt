@@ -1,0 +1,13 @@
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\bin\Debug\Tienda.exe.config
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\bin\Debug\Tienda.exe
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\bin\Debug\Tienda.pdb
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.csprojAssemblyReference.cache
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.Properties.Resources.resources
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.Vista.Main.resources
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.csproj.GenerateResource.cache
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.csproj.CoreCompileInputs.cache
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.csproj.CopyComplete
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.exe
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.pdb
+C:\Users\HP\Source\Repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.Vista.ListadoProductos.resources
