@@ -10,7 +10,7 @@ namespace Tienda.Modelo
 {
     class Clientes : Conexion
     {
-        //fue agregado y trabajado por bradigson y roshby
+        
         SqlDataReader LeerFilas;
         SqlCommand Comando = new SqlCommand();
         //Metodos Crud
