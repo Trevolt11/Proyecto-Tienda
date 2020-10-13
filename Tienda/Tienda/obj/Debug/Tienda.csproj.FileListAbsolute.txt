@@ -26,3 +26,16 @@ C:\Users\Robert\source\repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.exe
 C:\Users\Robert\source\repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.pdb
 C:\Users\Robert\source\repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.Vista.MantenimientoCategorias.resources
 C:\Users\Robert\source\repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.Vista.MantenimientoProductos.resources
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\bin\Debug\Tienda.exe.config
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.exe
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.pdb
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.csprojResolveAssemblyReference.cache
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.Properties.Resources.resources
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.Vista.ListadoProductos.resources
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.Vista.Main.resources
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.Vista.MantenimientoCategorias.resources
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.Vista.MantenimientoProductos.resources
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.csproj.GenerateResource.Cache
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\bin\Debug\Tienda.exe
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\bin\Debug\Tienda.pdb
+C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\bin\Debug\FontAwesome.Sharp.dll

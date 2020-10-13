@@ -17,7 +17,7 @@ namespace Tienda
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vista.Main());
+            Application.Run(new ListadoProductos());
         }
     }
 }

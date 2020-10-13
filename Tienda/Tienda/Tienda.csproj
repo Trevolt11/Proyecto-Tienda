@@ -51,15 +51,14 @@
   <ItemGroup>
     <Compile Include="controlador\CategoriaControlador.cs" />
     <Compile Include="controlador\ProductoControlador.cs" />
+    <Compile Include="Modelo\Clientes.cs" />
+    <Compile Include="Modelo\Conexion.cs" />
     <Compile Include="Modelo\Modelo_Categoria.cs" />
     <Compile Include="Modelo\Modelo_Productos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\ListadoProductos.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\ListadoProductos.Designer.cs">
-      <DependentUpon>ListadoProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Main.cs">
       <SubType>Form</SubType>
@@ -116,13 +115,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\89108e533640fd9d0731e0623699c57c.jpg" />
+    <None Include="controlador\Resources\89108e533640fd9d0731e0623699c57c.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo_size.jpg" />
+    <None Include="controlador\Resources\logo_size.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo_size1.jpg" />
+    <None Include="controlador\Resources\logo_size1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
