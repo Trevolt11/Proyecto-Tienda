@@ -1,0 +1,14 @@
+Los integrantes que aportaron al proyecto fueron:
+
+Roshby Hernández y Bradigson Núñez, los cuales trabajaron la carpeta controladora,
+Robert Caraballo Y Ismael Vázquez trabajaron la carpeta de “modelo”, y a los integrantes               Carlos Cabral Y Leonardo Fabian les tocaba la carpeta de “Vista” pero no entregaron en ningún momento su aporte porque lo Robert Caraballo Y Ismael Vázquez Asumieron y desarrollaron la carpeta de “vista”.
+
+Robert Caraballo 2019-8420
+ Ismael Vásquez. 2018-6842
+Roshby Hernández. 2019-7482		 
+ Bradigson Núñez. 2018-6114
+
+Carlos Cabral. 2019-7407 
+Leonardo Fabian. 2019-7530
+
+(Las matriculas 2019-7407 y 2019-7530 no estan identificables, se que estan en el grupo pero no se de quien cada una ya que no responden).
