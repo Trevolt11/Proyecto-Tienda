@@ -32,9 +32,9 @@ namespace Tienda.controlador
         {
             objetoCD.Editar(Convert.ToInt32(idproductos), nombre_producto, Convert.ToInt32(codigo), stock, fechvencimiento, descripcion, Convert.ToInt32(idcategoria), estado);
         }
-        public void EliminarPRod(string id)
+        public void EliminarPRod(string idproductos)
         {
-            objetoCD.Eliminar(Convert.ToInt32(id));
+            objetoCD.Eliminar(Convert.ToInt32(idproductos));
         }
 
     }

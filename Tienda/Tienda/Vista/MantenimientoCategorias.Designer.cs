@@ -34,8 +34,7 @@
             this.btn_Eliminar = new System.Windows.Forms.Button();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_editar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +67,7 @@
             this.btn_Eliminar.TabIndex = 13;
             this.btn_Eliminar.Text = "ELIMINAR";
             this.btn_Eliminar.UseVisualStyleBackColor = true;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // btn_agregar
             // 
@@ -77,6 +77,7 @@
             this.btn_agregar.TabIndex = 12;
             this.btn_agregar.Text = "AGREGAR";
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // dataGridView1
             // 
@@ -86,23 +87,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(844, 398);
             this.dataGridView1.TabIndex = 11;
             // 
-            // button1
+            // btn_editar
             // 
-            this.button1.Location = new System.Drawing.Point(1027, 151);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "ELIMINAR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1027, 108);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "AGREGAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_editar.Location = new System.Drawing.Point(800, 108);
+            this.btn_editar.Name = "btn_editar";
+            this.btn_editar.Size = new System.Drawing.Size(75, 23);
+            this.btn_editar.TabIndex = 17;
+            this.btn_editar.Text = "Editar";
+            this.btn_editar.UseVisualStyleBackColor = true;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // MantenimientoCategorias
             // 
@@ -110,8 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1353, 646);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_editar);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -134,8 +126,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_Eliminar;
         private System.Windows.Forms.Button btn_agregar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_editar;
     }
 }

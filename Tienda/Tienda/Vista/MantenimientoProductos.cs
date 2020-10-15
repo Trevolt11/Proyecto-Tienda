@@ -17,7 +17,7 @@ namespace Tienda.Vista
     public partial class MantenimientoProductos : Form
     {
         private string Idproductos = null;
-        string txt;
+        //string txt;
         ProductoControlador objN = new ProductoControlador();
         private bool Editar = false;
 
@@ -104,17 +104,17 @@ namespace Tienda.Vista
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
-        {/*
+        {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                idProducto = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
-                objetoCN.EliminarPRod(idProducto);
+                Idproductos = dataGridView1.CurrentRow.Cells["Idproductos"].Value.ToString();
+                objN.EliminarPRod(Idproductos);
                 MessageBox.Show("Eliminado correctamente");
-                MostrarProdctos();
+                Mostrarr();
             }
             else
-                MessageBox.Show("seleccione una fila por favor");*/
+                MessageBox.Show("seleccione una fila por favor");
         }
-    }
+    
     }
 }

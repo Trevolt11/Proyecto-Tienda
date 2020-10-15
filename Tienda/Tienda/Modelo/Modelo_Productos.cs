@@ -63,8 +63,8 @@ namespace Tienda.Modelo
             comando.Parameters.AddWithValue("@stock", stock);
             comando.Parameters.AddWithValue("@fecha_vencimiento", fechvencimiento);
             comando.Parameters.AddWithValue("@descripcion", descripcion);
-            comando.Parameters.AddWithValue("@@IDcategoriap", idcategoria);
-            comando.Parameters.AddWithValue("@@estado", estado);
+            comando.Parameters.AddWithValue("@IDcategoriap", idcategoria);
+            comando.Parameters.AddWithValue("@estado", estado);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexx.CerrarConexion();
@@ -72,11 +72,9 @@ namespace Tienda.Modelo
         public void Eliminar(int idproductos)
         {
             comando.Connection = conexx.AbrirConexion();
-            comando.CommandText = "EliminarProducto";
+            comando.CommandText = ("delete from Productos where Idproductos= "+idproductos+"");
             comando.CommandType = CommandType.StoredProcedure;
-            //comando.Parameters.AddWithValue("@idpro", id);
             comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
             conexx.CerrarConexion();
         }
 
