@@ -30,10 +30,7 @@ namespace Tienda.Vista
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void MantenimientoCategorias_Load(object sender, EventArgs e)
         {
@@ -48,7 +45,36 @@ namespace Tienda.Vista
             dataGridView1.DataSource = objN.MostrarProd();
         }
 
-        private void btn_agregar_Click(object sender, EventArgs e)
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                IDcategoria = dataGridView1.CurrentRow.Cells["IDcategoria"].Value.ToString();
+                objN.EliminarPRod(IDcategoria);
+                MessageBox.Show("Eliminado correctamente");
+                Mostrarr();
+            }
+            else
+                MessageBox.Show("seleccione una fila por favor");
+        }
+
+        private void btneditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                Editar = true;
+                textBox1.Text = dataGridView1.CurrentRow.Cells["IDcategoria"].Value.ToString();
+                textBox2.Text = dataGridView1.CurrentRow.Cells["Nombre"].Value.ToString();
+                textBox3.Text = dataGridView1.CurrentRow.Cells["Estado"].Value.ToString();
+
+            }
+            else
+                MessageBox.Show("seleccione una fila por favor");
+
+        }
+
+        private void btnagregar_Click(object sender, EventArgs e)
         {
             if (Editar == false)
             {
@@ -70,34 +96,6 @@ namespace Tienda.Vista
                 Mostrarr();
                 Editar = false;
             }
-        }
-
-        private void btn_editar_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                Editar = true;
-                textBox1.Text = dataGridView1.CurrentRow.Cells["IDcategoriap"].Value.ToString();
-                textBox2.Text = dataGridView1.CurrentRow.Cells["nombre_producto"].Value.ToString();
-                textBox3.Text = dataGridView1.CurrentRow.Cells["estado"].Value.ToString();
-
-            }
-            else
-                MessageBox.Show("seleccione una fila por favor");
-
-        }
-
-        private void btn_Eliminar_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                IDcategoria = dataGridView1.CurrentRow.Cells["IDcategoria"].Value.ToString();
-                objN.EliminarPRod(IDcategoria);
-                MessageBox.Show("Eliminado correctamente");
-                Mostrarr();
-            }
-            else
-                MessageBox.Show("seleccione una fila por favor");
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 
+
 namespace Tienda.Modelo
 {
     public class Conexion
@@ -15,7 +16,7 @@ namespace Tienda.Modelo
         //public SqlConnection conex = new SqlConnection();
 
         //public SqlConnection conex = new SqlConnection("Server=LAPTOP-PIA2F9KS\\SQLEXPRESS;DataBase=BDG2;Integrated Security=true");
-        public SqlConnection conex = new SqlConnection("Data Source = LAPTOP-PIA2F9KS\\SQLEXPRESS; Initial Catalog = BDG2; Integrated Security=true");
+        public SqlConnection conex = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = BDG2; Integrated Security=true");
 
 
         public SqlConnection AbrirConexion()

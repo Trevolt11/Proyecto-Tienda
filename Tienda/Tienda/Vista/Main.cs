@@ -40,7 +40,7 @@ namespace Tienda.Vista
             public static Color color1 = Color.FromArgb(172, 126, 241);
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95,77, 221);
+            public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
 
@@ -70,8 +70,8 @@ namespace Tienda.Vista
                 iconCurrentChildForm.IconColor = color;
             }
         }
-                private void DisableButton()
-            {
+        private void DisableButton()
+        {
 
             if (currentBtn != null)
             {
@@ -95,51 +95,34 @@ namespace Tienda.Vista
         {
 
             ActivateButton(sender, RGBcolors.color1);
-            Form MC = new MantenimientoCategorias();
-            MC.TopLevel = false;
-            panelEscritorio.Controls.Add(MC);
-            panelEscritorio.Tag = MC;
-            MC.Show();
-            //this.Close();
-
+            AbrirFormulario<MantenimientoCategorias>();
         }
 
         private void Productos_Click(object sender, EventArgs e)
         {
 
             ActivateButton(sender, RGBcolors.color2);
-
-            Form MCC = new MantenimientoProductos();
-            MCC.TopLevel = false;
-            panelEscritorio.Controls.Add(MCC);
-            panelEscritorio.Tag = MCC;
-            MCC.Show();
-            //v2.Show();
-            //this.Close();
+            AbrirFormulario<MantenimientoProductos>();
         }
 
         private void Listado_Click(object sender, EventArgs e)
         {
-            
+
 
             ActivateButton(sender, RGBcolors.color4);
-            Form MC = new ListadoProductos();
-            MC.TopLevel = false;
-            panelEscritorio.Controls.Add(MC);
-            panelEscritorio.Tag = MC;
-            MC.Show();
-            //this.Close();
+            AbrirFormulario<ListadoProductos>();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+           
             if (currentChildForm != null)
             {
                 currentChildForm.Close();
             }
             Reset();
-            Main vmain = new Main();
-            vmain.Show();
+            AbrirFormulario<menu>();
+
         }
 
         private void Reset()
@@ -158,13 +141,37 @@ namespace Tienda.Vista
 
         private void iconCurrentChildForm_Click(object sender, EventArgs e)
         {
-            Main vmain = new Main();
-            vmain.Show();
+            Reset();
+            AbrirFormulario<menu>();
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
 
         }
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = panelEscritorio.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
+                                                                                    //si el formulario/instancia no existe
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                panelEscritorio.Controls.Add(formulario);
+                panelEscritorio.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            //si el formulario/instancia existe
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+        
     }
 }

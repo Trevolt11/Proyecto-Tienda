@@ -99,6 +99,12 @@
     <Compile Include="Vista\MantenimientoProductos.Designer.cs">
       <DependentUpon>MantenimientoProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -150,6 +156,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_list_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
