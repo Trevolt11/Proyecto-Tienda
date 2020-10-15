@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tienda.controlador;
 
 namespace Tienda.Vista
 {
@@ -16,6 +17,7 @@ namespace Tienda.Vista
         public MantenimientoCategorias()
         {
             InitializeComponent();
+            //ListadoControlador control = new ListadoControlador(this);
 
             this.Text = string.Empty;
             this.ControlBox = false;

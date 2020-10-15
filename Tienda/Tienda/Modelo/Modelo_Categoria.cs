@@ -8,9 +8,9 @@ namespace Tienda.Modelo
 {
     class Modelo_Categoria
     {
-        public int IDCategoria{ get; set; }
-        public int NOMBRE { get; set; }
-        public int ESTADO { get; set; }
+        public int IDcategoria { get; set; }
+        public int nombre_producto { get; set; }
+        public int Estado { get; set; }
 
     }
 }

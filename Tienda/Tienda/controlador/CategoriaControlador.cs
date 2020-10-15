@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tienda.Modelo;
 using Tienda.Vista;
+using Tienda.controlador;
 
 namespace Tienda.controlador
 {
@@ -16,13 +17,9 @@ namespace Tienda.controlador
 
         public CategoriaControlador(MantenimientoCategorias view)
         {
-            vista1 = view;
+            //vista1 = view;
         }
 
-        public void clienteList()
-        {
-
-        }
 
     }
 }

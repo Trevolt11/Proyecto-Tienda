@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,14 +64,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDG2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDG2DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="controlador\CategoriaControlador.cs" />
+    <Compile Include="controlador\ListadoControlador.cs" />
     <Compile Include="controlador\ProductoControlador.cs" />
-    <Compile Include="Modelo\Clientes.cs" />
+    <Compile Include="Modelo\N_mostrar.cs" />
+    <Compile Include="Modelo\Productos.cs" />
     <Compile Include="Modelo\Conexion.cs" />
     <Compile Include="Modelo\Modelo_Categoria.cs" />
     <Compile Include="Modelo\Modelo_Productos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\ListadoProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,14 +113,12 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="Vista\General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\ListadoProductos.resx">
       <DependentUpon>ListadoProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +131,17 @@
     <EmbeddedResource Include="Vista\MantenimientoProductos.resx">
       <DependentUpon>MantenimientoProductos.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BDG2DataSet.xsc">
+      <DependentUpon>BDG2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BDG2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDG2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDG2DataSet.xss">
+      <DependentUpon>BDG2DataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -122,6 +164,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="controlador\Resources\logo_size1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,3 +39,4 @@ C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\obj\Debug\Tienda.csproj.Gen
 C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\bin\Debug\Tienda.exe
 C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\bin\Debug\Tienda.pdb
 C:\Users\Music\Source\Repos\Tarea3.G25\Tienda\Tienda\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Robert\source\repos\Tarea3.G2\Tienda\Tienda\obj\Debug\Tienda.Vista.General.resources

@@ -133,7 +133,7 @@
             // btnHome
             // 
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHome.Image = global::Tienda.Properties.Resources.logo_size1;
+           // this.btnHome.Image = global::Tienda.Properties.Resources.logo_size1;
             this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(114, 52);

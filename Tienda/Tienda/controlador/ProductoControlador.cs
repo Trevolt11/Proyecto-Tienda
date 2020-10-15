@@ -5,27 +5,36 @@ using System.Text;
 using System.Threading.Tasks;
 using Tienda.Modelo;
 using Tienda.Vista;
-
+using Tienda.controlador;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Reflection.Emit;
+using System.Data;
 
 namespace Tienda.controlador
-{
-    class ProductoControlador
-    {
-        //esta parte la trabajamos roshby y bradigson y esta es parte de nuestro controlador
-        ListadoProductos vista;//esto era el cliente view 
-        //Constructor
-        public ProductoControlador(ListadoProductos view)
-        {
-            vista = view;
-            //Inicializar eventos de la vista
-            vista.Load += new EventHandler(Clientelist); // en el entreparentecis ponemos el metodo de abajo que esta en privado(Clientelist)
 
-        }
-        private void Clientelist(object sender, EventArgs e)
+    //Mantenimiento producto
+{
+    public class ProductoControlador
+    {
+        private Modelo_Productos objetoCD = new Modelo_Productos();
+        public DataTable MostrarProd()
         {
-            Clientes db = new Clientes();
-            vista.dataGridView1.DataSource = db.VerRegistros(vista.textBox1.Text);//este metodo se encuentra en la (clase ClienteDao).
-                                                                                  //En el entreparentecis del VerRegistro, se agrega el textbox de busqueda para recibir los datos digitados
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.Mostrar();
+            return tabla;
+        }
+        public void InsertarPRod (string idproductos, string nombre_producto, string codigo, string stock, string fechvencimiento, string descripcion, string idcategoria, string estado)        
+        {
+            objetoCD.Insertar(Convert.ToInt32(idproductos), nombre_producto, Convert.ToInt32(codigo), stock, fechvencimiento, descripcion, Convert.ToInt32(idcategoria), estado);
+        }
+        public void EditarProd(string idproductos, string nombre_producto, string codigo, string stock, string fechvencimiento, string descripcion, string idcategoria, string estado)
+        {
+            objetoCD.Editar(Convert.ToInt32(idproductos), nombre_producto, Convert.ToInt32(codigo), stock, fechvencimiento, descripcion, Convert.ToInt32(idcategoria), estado);
+        }
+        public void EliminarPRod(string id)
+        {
+            objetoCD.Eliminar(Convert.ToInt32(id));
         }
 
     }
