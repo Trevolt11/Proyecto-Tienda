@@ -64,15 +64,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BDG2DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BDG2DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="controlador\CategoriaControlador.cs" />
     <Compile Include="controlador\ListadoControlador.cs" />
     <Compile Include="controlador\ProductoControlador.cs" />
-    <Compile Include="Modelo\Productos.cs" />
+    <Compile Include="Modelo\Modelo_ListadoProductos.cs" />
     <Compile Include="Modelo\Conexion.cs" />
     <Compile Include="Modelo\Modelo_Categoria.cs" />
     <Compile Include="Modelo\Modelo_Productos.cs" />
@@ -121,17 +116,6 @@
     <EmbeddedResource Include="Vista\MantenimientoProductos.resx">
       <DependentUpon>MantenimientoProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BDG2DataSet.xsc">
-      <DependentUpon>BDG2DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BDG2DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BDG2DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BDG2DataSet.xss">
-      <DependentUpon>BDG2DataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

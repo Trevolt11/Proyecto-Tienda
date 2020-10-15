@@ -12,7 +12,7 @@ using Tienda.Vista;
 
 namespace Tienda.Modelo
 {
-    class Productos
+    class Modelo_ListadoProductos
 
         
     {

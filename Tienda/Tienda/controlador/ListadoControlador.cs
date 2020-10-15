@@ -14,7 +14,7 @@ namespace Tienda.controlador
     class ListadoControlador
     {
 
-        private Productos objetoCD = new Productos();
+        private Modelo_ListadoProductos objetoCD = new Modelo_ListadoProductos();
         public DataTable MostrarProd()
         {
             DataTable tabla = new DataTable();
