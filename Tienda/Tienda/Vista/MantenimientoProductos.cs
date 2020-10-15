@@ -104,7 +104,7 @@ namespace Tienda.Vista
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
-        {
+        {/*
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 idProducto = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
@@ -113,7 +113,7 @@ namespace Tienda.Vista
                 MostrarProdctos();
             }
             else
-                MessageBox.Show("seleccione una fila por favor");
+                MessageBox.Show("seleccione una fila por favor");*/
         }
     }
     }

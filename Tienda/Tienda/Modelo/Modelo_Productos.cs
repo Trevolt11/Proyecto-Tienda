@@ -74,7 +74,7 @@ namespace Tienda.Modelo
             comando.Connection = conexx.AbrirConexion();
             comando.CommandText = "EliminarProducto";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@idpro", id);
+            //comando.Parameters.AddWithValue("@idpro", id);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexx.CerrarConexion();
