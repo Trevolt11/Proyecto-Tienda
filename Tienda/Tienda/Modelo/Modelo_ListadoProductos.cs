@@ -29,7 +29,7 @@ namespace Tienda.Modelo
         {
 
             comando.Connection = conexx.AbrirConexion();
-            comando.CommandText = "select Productos.*,categorias.Nombre  as categoria from Productos inner join categorias on Productos.IDCategoria = categorias.IDcategoria";
+            comando.CommandText = "	select Productos.*,categorias.nombre_producto from Productos inner join categorias on Productos.IDcategoriap = categorias.IDcategoria";
             //comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
             tabla.Load(leer);
